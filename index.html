@@ -1,0 +1,424 @@
+<!doctype html>
+<html>
+
+<head>
+<title>Peize Sun</title>
+
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="keywords" content="Peize Sun"> 
+<meta name="description" content="Peize Sun's home page">
+<link rel="stylesheet" href="css/jemdoc.css" type="text/css" />
+<!-- <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"> -->
+<!-- <link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"> -->
+
+<script>
+   function showPubs(id) {
+  if (id == 0) {
+    document.getElementById('pubs').innerHTML = document.getElementById('pubs_selected').innerHTML;
+    document.getElementById('select0').style = 'text-decoration:underline;color:#000000';
+    document.getElementById('select1').style = '';
+  } else {
+    document.getElementById('pubs').innerHTML = document.getElementById('pubs_by_topic').innerHTML;
+    document.getElementById('select1').style = 'text-decoration:underline;color:#000000';
+    document.getElementById('select0').style = '';
+  }
+}
+
+</script>
+
+</head>
+
+
+<body>
+
+<div id="layout-content" style="margin-top:25px">
+
+
+<table>
+	<tbody>
+		<tr>
+			<td width="75%">
+				<div id="toptitle">
+					<h1>Peize Sun 孙培泽<h1>
+				</div>
+
+                <h3>Ph.D. Student</h3>
+
+		<p>
+                    Department of Computer Science</br>
+                    The University of Hong Kong </br>
+					</br>
+                    Email: sunpeize AT foxmail DOT com </br>
+		</p>
+		<p>
+			<a href="https://github.com/PeizeSun"><img src="assets/logos/github_logo.png" height="30px"></a>&nbsp;&nbsp;
+			<a href="https://scholar.google.com/citations?user=Grkp5AQAAAAJ&hl=en"><img src="assets/logos/google_logo.png" height="30px"></a>&nbsp;&nbsp;
+		</p>
+			</td>
+
+			</td>
+			<td width="25%">
+				<img src="assets/imgs/me2.PNG" width="100%"/>
+			</td>
+		<tr>
+	</tbody>
+</table>
+
+
+<h2>Biography</h2> 
+
+<p>
+I am a second-year (2020-now) Ph.D. student in Department of Computer Science, The University of Hong Kong, advised by Prof. <a href="http://luoping.me/">Ping Luo</a>. My research interest is computer vision.
+<p>
+I obtained my bachelor and master degree from Electrical Engineering Department, Xi'an Jiaotong University. I interned at Megvii(Face++) and ByteDance.
+</p>
+
+<h2>News</h2>
+<!-- <ul> -->
+    [2022/03] We are organizing <a href="https://motcomplex.github.io/">Multiple Object Tracking and Segmentation in Complex Environments Workshop</a>, ECCV 2022.
+<!-- </ul> -->
+
+<p id="publications">
+<h2>Publications
+    (<a href="" id="select0" onclick="showPubs(0); return false;">show selected</a> /
+     <a href="" id="select1" onclick="showPubs(1); return false;">show all</a>)
+</h2>
+</p>
+
+
+<div id="pubs"></div>
+<script id="pubs_selected">
+<!-- <ul>     -->
+    <div class="paper" style="clear:left;">
+      <div class="pimg" style="float:left;margin-bottom:10px;padding-left:3px;border-bottom:solid 1px #EEE;box-shadow:0 0px 2px">
+          <img src="assets/imgs/dancetrack.jpg" width="200" >
+      </div>
+      <div class="ptitle" style="padding:1px;margin-left:215px;">
+          DanceTrack: Multi-Object Tracking in Uniform Appearance and Diverse Motion
+      </div>
+      <div class="pauthors" style="padding:1px;margin-left:215px;">
+          <b>Peize Sun*</b>, Jinkun Cao*, Yi Jiang, Zehuan Yuan, Song Bai, Kris Kitani, Ping Luo 
+      </div>
+      <div class="pvenue" style="padding:1px;margin-left:215px;">
+          Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2022
+          <p>
+          [<a href="https://arxiv.org/abs/2111.14690" target="_blank" rel="noopener">paper</a>]
+          [<a href="https://dancetrack.github.io/" target="_blank" rel="noopener">project page</a>]
+          [<a href="https://github.com/DanceTrack/DanceTrack" target="_blank" rel="noopener">code</a>] 
+          </p>
+      </div>
+    </div>
+
+
+
+    <div class="paper" style="clear:left;">
+      <div class="pimg" style="float:left;margin-bottom:10px;padding-left:3px;border-bottom:solid 1px #EEE;box-shadow:0 0px 2px">
+          <img src="assets/imgs/bytetrack.jpg" width="200" >
+      </div>
+      <div class="ptitle" style="padding:1px;margin-left:215px;">
+          ByteTrack: Multi-Object Tracking by Associating Every Detection Box
+      </div>
+      <div class="pauthors" style="padding:1px;margin-left:215px;">
+          Yifu Zhang, <b>Peize Sun</b>, Yi Jiang, Dongdong Yu, Fucheng Weng, Zehuan Yuan, Ping Luo, Wenyu Liu, Xinggang Wang
+      </div>
+      <div class="pvenue" style="padding:1px;margin-left:215px;">
+          arXiv:2110.06864
+          <p>
+          [<a href="https://arxiv.org/abs/2110.06864" target="_blank" rel="noopener">paper</a>]
+          [<a href="https://github.com/ifzhang/ByteTrack" target="_blank" rel="noopener">code</a>] 
+          </p>
+      </div>
+    </div>
+
+
+
+    <div class="paper" style="clear:left;">
+      <div class="pimg" style="float:left;margin-bottom:10px;padding-left:3px;border-bottom:solid 1px #EEE;box-shadow:0 0px 2px">
+          <img src="assets/imgs/transtrack.jpeg" width="200" >
+      </div>
+      <div class="ptitle" style="padding:1px;margin-left:215px;">
+          TransTrack: Multiple Object Tracking with Transformer
+      </div>
+      <div class="pauthors" style="padding:1px;margin-left:215px;">
+          <b>Peize Sun</b>, Jinkun Cao, Yi Jiang, Rufeng Zhang, Enze Xie, Zehuan Yuan, Changhu Wang, Ping Luo
+      </div>
+      <div class="pvenue" style="padding:1px;margin-left:215px;">
+          arXiv:2012.15460
+          <p>
+          [<a href="https://arxiv.org/abs/2012.15460" target="_blank" rel="noopener">paper</a>]
+          [<a href="https://github.com/PeizeSun/TransTrack" target="_blank" rel="noopener">code</a>] 
+          </p>
+      </div>
+    </div>
+
+
+
+    <div class="paper" style="clear:left;">
+      <div class="pimg" style="float:left;margin-bottom:10px;padding-left:3px;border-bottom:solid 1px #EEE;box-shadow:0 0px 2px">
+          <img src="assets/imgs/onenet.jpg" width="200" >
+      </div>
+      <div class="ptitle" style="padding:1px;margin-left:215px;">
+          What Makes for End-to-End Object Detection ?
+      </div>
+      <div class="pauthors" style="padding:1px;margin-left:215px;">
+          <b>Peize Sun</b>, Yi Jiang, Enze Xie, Wenqi Shao, Zehuan Yuan, Changhu Wang, Ping Luo
+      </div>
+      <div class="pvenue" style="padding:1px;margin-left:215px;">
+          International Conference on Machine Learning (<b>ICML</b>), 2021 
+          <p>
+          [<a href="https://arxiv.org/abs/2012.05780" target="_blank" rel="noopener">paper</a>]
+          [<a href="https://github.com/PeizeSun/OneNet" target="_blank" rel="noopener">code</a>] 
+          </p>
+      </div>
+    </div>
+
+
+
+    <div class="paper" style="clear:left;">
+      <div class="pimg" style="float:left;margin-bottom:10px;padding-left:3px;border-bottom:solid 1px #EEE;box-shadow:0 0px 2px">
+          <img src="assets/imgs/sparsercnn.jpg" width="200" >
+      </div>
+      <div class="ptitle" style="padding:1px;margin-left:215px;">
+          Sparse R-CNN: End-to-End Object Detection with Learnable Proposals
+      </div>
+      <div class="pauthors" style="padding:1px;margin-left:215px;">
+          <b>Peize Sun</b>*, Rufeng Zhang*, Yi Jiang*, Tao Kong, Chenfeng Xu, Wei Zhan, Masayoshi Tomizuka, Lei Li, Zehuan Yuan, Changhu Wang, Ping Luo
+      </div>
+      <div class="pvenue" style="padding:1px;margin-left:215px;">
+          Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2021 
+          <p>
+          [<a href="https://arxiv.org/abs/2011.12450" target="_blank" rel="noopener">paper</a>]
+          [<a href="https://github.com/PeizeSun/SparseR-CNN" target="_blank" rel="noopener">code</a>] 
+          </p>
+      </div>
+    </div>
+
+
+
+    <div class="paper" style="clear:left;">
+      <div class="pimg" style="float:left;margin-bottom:10px;padding-left:3px;border-bottom:solid 1px #EEE;box-shadow:0 0px 2px">
+          <img src="assets/imgs/polarmask.jpg" width="200">
+      </div>
+      <div class="ptitle" style="padding:1px;margin-left:215px;">
+          PolarMask: Single Shot Instance Segmentation with Polar Representation
+      </div>
+      <div class="pauthors" style="padding:1px;margin-left:215px;">
+          Enze Xie*, <b>Peize Sun*</b>, Xiaoge Song*, Wenhai Wang, Xuebo Liu, Ding Liang, Chunhua Shen, Ping Luo
+      </div>
+      <div class="pvenue" style="padding:1px;margin-left:215px;">
+          Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2020, <b>Oral</b>
+          <p>
+          [<a href="http://arxiv.org/abs/1909.13226" target="_blank" rel="noopener">paper</a>]
+          [<a href="https://github.com/xieenze/PolarMask" target="_blank" rel="noopener">code</a>]
+          [<a href="https://www.paperdigest.org/2021/02/most-influential-cvpr-papers/" target="_blank" rel="noopener">CVPR20 Top-10 Influential Papers</a>]
+          </p>
+      </div>
+    </div>
+
+<!-- </ul> -->
+</script>
+
+<script id="pubs_by_topic">
+<h3>2022:</h3>
+<ul>
+    <li>
+        DanceTrack: Multi-Object Tracking in Uniform Appearance and Diverse Motion</br>
+	<b>Peize Sun*</b>, Jinkun Cao*, Yi Jiang, Zehuan Yuan, Song Bai, Kris Kitani, Ping Luo </br>
+        Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2022 </br>
+        [<a href="https://arxiv.org/abs/2111.14690">arXiv</a>]
+        [<a href="https://dancetrack.github.io/">project page</a>]
+        [<a href="https://https://github.com/DanceTrack/DanceTrack">code</a>]         
+        <p></p>
+    </li>
+							       
+    <li>
+        Language as Queries for Referring Video Object Segmentation</br>
+	Jiannan Wu, Yi Jiang, <b>Peize Sun</b>, Zehuan Yuan, Ping Luo</br>
+        Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2022 </br>
+        [<a href="https://arxiv.org/abs/2201.00487">arXiv</a>][<a href="https://github.com/wjn922/ReferFormer">code</a>]
+        <p></p>
+    </li>
+							       
+    <li>
+        Objects in Semantic Topology</br>
+	Shuo Yang, <b>Peize Sun</b>, Yi Jiang, Xiaobo Xia, Ruiheng Zhang, Zehuan Yuan, Changhu Wang, Ping Luo, Min Xu</br>
+        International Conference on Learning Representations (<b>ICLR</b>), 2022</br>
+        [<a href="https://arxiv.org/abs/2110.02687">arXiv</a>]
+        <p></p>
+    </li>
+</ul>
+							       
+<h3>2021:</h3>
+<ul>
+    <li>
+        What Makes for End-to-End Object Detection ?</br>
+        <b>Peize Sun</b>, Yi Jiang, Enze Xie, Wenqi Shao, Zehuan Yuan, Changhu Wang, Ping Luo</br></font>
+        International Conference on Machine Learning (<b>ICML</b>), 2021 </br>
+        [<a href="https://arxiv.org/abs/2012.05780">arXiv</a>][<a href="https://github.com/PeizeSun/OneNet">code</a>]
+        <p></p>
+    </li>
+
+    <li>
+        Sparse R-CNN: End-to-End Object Detection with Learnable Proposals</br>
+        <b>Peize Sun</b>*, Rufeng Zhang*, Yi Jiang*, Tao Kong, Chenfeng Xu, Wei Zhan, Masayoshi Tomizuka, Lei Li, Zehuan Yuan, Changhu Wang, Ping Luo</br>
+        Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2021 </br>
+        [<a href="https://arxiv.org/abs/2011.12450">arXiv</a>][<a href="https://github.com/PeizeSun/SparseR-CNN">code</a>]
+        <p></p>
+    </li>
+							       
+    <li>
+        Watch Only Once: An End-to-End Video Action Detection Framework</br>
+        Shoufa Chen, <b>Peize Sun</b>, Enze Xie, Chongjian Ge, Jiannan Wu, Lan Ma, Jiajun Shen, Ping Luo</br>
+        International Conference on Computer Vision (<b>ICCV</b>), 2021,</br>
+        [<a href="https://openaccess.thecvf.com/content/ICCV2021/html/Chen_Watch_Only_Once_An_End-to-End_Video_Action_Detection_Framework_ICCV_2021_paper.html">arXiv</a>][<a href="https://github.com/ShoufaChen/WOO">code</a>]</br>
+        <p></p>
+    </li>							       
+							       
+    <li>
+        Domain-Invariant Disentangled Network for Generalizable Object Detection</br>
+        Chuang Lin, Zehuan Yuan, Sicheng Zhao, <b>Peize Sun</b>, Changhu Wang, Jianfei Cai</br>
+        International Conference on Computer Vision (<b>ICCV</b>), 2021,</br>
+        [<a href="https://openaccess.thecvf.com/content/ICCV2021/html/Lin_Domain-Invariant_Disentangled_Network_for_Generalizable_Object_Detection_ICCV_2021_paper.html
+">arXiv</a>]
+        <p></p>
+    </li>
+
+    <li>
+        DetCo: Unsupervised Contrastive Learning for Object Detection</br>
+        Enze Xie*, Jian Ding*, Wenhai Wang, Xiaohang Zhan, Hang Xu, <b>Peize Sun</b>, Zhenguo Li, Ping Luo</br>
+        International Conference on Computer Vision (<b>ICCV</b>), 2021,</br>
+        [<a href="https://arxiv.org/abs/2102.04803">arXiv</a>][<a href="http://github.com/xieenze/DetCo">code</a>]
+        <p></p>
+    </li>
+
+    <li>
+        Segmenting Transparent Objects in the Wild with Transformer</br>
+        Enze Xie, Wenjia Wang, Wenhai Wang, <b>Peize Sun</b>, Hang Xu, Ding Liang, Ping Luo</br>
+        International Joint Conference on Artificial Intelligence (<b>IJCAI</b>), 2021 </br>
+        [<a href="https://arxiv.org/abs/2101.08461">arXiv</a>][<a href="https://github.com/xieenze/Trans2Seg">code</a>]
+        <p></p>
+    </li>
+							       
+    <li>
+        ByteTrack: Multi-Object Tracking by Associating Every Detection Box</br>
+        Yifu Zhang, <b>Peize Sun</b>, Yi Jiang, Dongdong Yu, Fucheng Weng, Zehuan Yuan, Ping Luo, Wenyu Liu, Xinggang Wang
+        arXiv:2110.06864</br>
+        [<a href="https://arxiv.org/abs/2110.06864">arXiv</a>][<a href="https://github.com/ifzhang/ByteTrack">code</a>]
+        <p></p>
+    </li>
+							       
+    <li>
+        Towards High-Quality Temporal Action Detection with Sparse Proposals</br>
+        Jiannan Wu, <b>Peize Sun</b>, Shoufa Chen, Jiewen Yang, Zihao Qi, Lan Ma, Ping Luo</br>
+        arXiv:2109.08847</br>
+        [<a href="https://arxiv.org/abs/2109.08847">arXiv</a>][<a href="https://github.com/wjn922/SP-TAD">code</a>]
+        <p></p>
+    </li>
+							       
+    <li>
+        TransTrack: Multiple Object Tracking with Transformer</br>
+        <b>Peize Sun</b>, Jinkun Cao, Yi Jiang, Rufeng Zhang, Enze Xie, Zehuan Yuan, Changhu Wang, Ping Luo</br>
+        arXiv:2012.15460</br>
+        [<a href="https://arxiv.org/abs/2012.15460">arXiv</a>][<a href="https://github.com/PeizeSun/TransTrack">code</a>]
+        <p></p>
+    </li>
+							    						    
+    <li>
+        OneNet: Towards End-to-End One-Stage Object Detection</br>
+        <b>Peize Sun</b>, Yi Jiang, Enze Xie, Zehuan Yuan, Changhu Wang, Ping Luo</br>
+        arXiv:2012.05780, improved version has been accepted by ICML2021</br>
+        [<a href="http://arxiv.org/abs/2012.05780v1">arXiv</a>][<a href="https://github.com/PeizeSun/OneNet">code</a>]
+        <p></p>
+    </li>
+							       
+							       
+</ul>
+							       
+<h3>2020:</h3>
+<ul>
+    <li>
+        PolarMask: Single Shot Instance Segmentation with Polar Representation</br>
+        Enze Xie*, <b>Peize Sun*</b>, Xiaoge Song*, Wenhai Wang, Xuebo Liu, Ding Liang, Chunhua Shen, Ping Luo</br>
+        Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2020, <b>Oral</b></br>
+        [<a href="http://arxiv.org/abs/1909.13226">arXiv</a>][<a href="https://github.com/xieenze/PolarMask">code</a>] <a href="https://www.paperdigest.org/2021/02/most-influential-cvpr-papers/">[CVPR20 Top-10 Influential Papers]</a>
+        <p></p>
+    </li>
+</ul>
+
+<h3>Before 2019:</h3>
+<ul>
+    <li>
+        Double Anchor R-CNN for Human Detection in a Crowd</br>
+        Kevin Zhang*, Feng Xiong*, <b>Peize Sun</b>, Li Hu, Boxun Li, Gang Yu</br>
+        arXiv:1909.09998</br>
+        [<a href="http://arxiv.org/abs/1909.09998">arXiv</a>]
+        <p></p>
+    </li>
+
+    <li>
+        TextSR: Content-Aware Text Super-Resolution Guided by Recognition</br>
+        Wenjia Wang*, Enze Xie*, <b>Peize Sun</b>, Wenhai Wang, Lixun Tian, Chunhua Shen, Ping Luo</br>
+        arXiv:1909.07113</br>
+        [<a href="https://arxiv.org/abs/1909.07113">arXiv</a>]
+        <p></p>
+    </li>
+</ul>
+
+</script>
+
+<script>showPubs(0);</script>
+<script>var scroll = new SmoothScroll('a[href*="#"]', {speed: 1000});</script>
+
+
+<h2>Honors</h2>
+
+<ul>
+    <li>
+        Hong Kong PhD Fellowship, 2020 - 2024
+    </li>
+    <li>
+        Chiang Chen Enterprise Scholarship, 2017, 2018
+    </li>
+    <li>
+        First-class Academic Scholarship, 2018
+    </li>
+    <li>
+        First-class Recommended Postgraduate Scholarship, 2017
+    </li>
+    <li>
+        National Scholarship, 2016
+    </li>
+    <li>
+        National Endeavor Scholarship, 2014, 2015
+    </li>
+</ul>
+
+
+<h2>Academic Service</h2>
+
+<ul>
+    <li>
+        Conference Review:</br>
+	International Conference on Computer Vision (ICCV)</br>
+	Conference on Computer Vision and Pattern Recognition (CVPR)</br>
+    </li>
+
+    <li>
+        Journal Review:</br> 
+	IEEE Transactions on Intelligent Transportation Systems</br>
+	Journal of Visual Communication and Image Representation</br>
+    </li>
+</ul>
+
+<table width="100%"> 
+	<tr> 
+		<td align="center">&copy; Peize Sun | Last update: April 2022</td>
+	</tr> 
+</table>
+
+</div>
+
+
+</body>
+
+</html>
